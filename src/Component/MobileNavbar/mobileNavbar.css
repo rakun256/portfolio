@@ -1,0 +1,41 @@
+.mobile-navbar-container {
+  position: relative;
+  padding: 0 20px;
+}
+
+.mobile-navbar-toggle {
+  position: absolute;
+  cursor: pointer;
+  font-size: 20px;
+  right: 20px;
+  top: 5px;
+  align-items: center;
+}
+
+.mobile-navbar-links {
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.mobile-navbar-links.open {
+  opacity: 1; /* Set opacity to 1 when navbar is open */
+  background-color: var(--shade_1);
+}
+
+.mobile-navbar-container.open{
+    background-color: var(--shade_1);
+}
+
+.mobile-navbar-links a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}

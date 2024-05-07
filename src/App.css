@@ -1,0 +1,26 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-app{
+    display: block;
+}
+
+.mobile-navbar-app{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .navbar-app{
+        display: none;
+    }
+
+    .mobile-navbar-app{
+        display: block;
+    }
+}

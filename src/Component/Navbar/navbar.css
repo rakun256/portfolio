@@ -1,0 +1,25 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 75px;
+}
+
+.navbar-name{
+    align-items: center;
+}
+
+.navbar-name h1{
+    font-size: 25px;
+}
+
+.navbar-links{
+    display: flex;
+    text-decoration: none;
+    gap: 2rem;
+}
+
+.navbar-links a{
+    text-decoration: none;
+}
