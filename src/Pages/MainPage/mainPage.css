@@ -20,6 +20,7 @@
 .mainpage-flexbox{
     display: flex;
     gap: 5rem;
+    margin-top: -75px;
 }
 
 .mainpage-photo img{
@@ -28,3 +29,37 @@
     border-radius: 50%;
 }
 
+@media only screen and (max-width: 768px){
+    .mainpage-container{
+        justify-content: center;
+        gap: 0;
+    }
+
+    .mainpage-flexbox{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .mainpage-title{
+        font-size: 18px;
+    }
+
+    .mainpage-title h1{
+        margin: 0;
+    }
+
+    .mainpage-text{
+        width: 300px;
+        padding: 0 20px;
+    }
+
+    .mainpage-photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainpage-photo img{
+        width: 150px;
+    }
+}
