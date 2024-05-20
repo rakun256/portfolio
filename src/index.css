@@ -44,3 +44,11 @@ a{
 a:hover{
   color: var(--shade_2);
 }
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
