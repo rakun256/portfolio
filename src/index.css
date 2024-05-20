@@ -22,6 +22,7 @@ code {
   --shade_1: #352F44;
   --shade_2: #5C5470;
   --body_text: #DBD8E3;
+  --glow: #ffffff22;
 }
 
 [data-theme="light"]{
@@ -37,7 +38,7 @@ code {
 
 a{
   color: var(--body_text);
-  transition: 100ms;
+  transition: color 300ms ease;
 }
 
 a:hover{

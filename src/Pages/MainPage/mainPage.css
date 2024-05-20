@@ -9,24 +9,53 @@
 }
 
 .mainpage-text{
-    width: 720px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainpage-socials{
+    display: flex;
+    font-size: 1.75rem;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.mainpage-socials a{
+    transition: 300ms ease;
+    color: var(--shade_2);
+}
+
+.mainpage-socials a:hover{
+    transform: scale(1.2);
+    color: var(--text_color);
 }
 
 .mainpage-title{
-    font-size: 40px;
+    font-size: 2.25rem;
+}
+
+.mainpage-title h1{
+    margin: 0;
+}
+
+.mainpage-desc p{
+    margin: 0;
+    font-size: 1.1rem;
 }
 
 .mainpage-flexbox{
     display: flex;
     gap: 5rem;
-    margin-top: -75px;
 }
 
 .mainpage-photo img{
     width: 350px;
     height: auto;
     border-radius: 50%;
+    box-shadow: 0px 0px 40px 50px var(--glow);
 }
 
 @media only screen and (max-width: 768px){
