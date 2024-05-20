@@ -1,0 +1,59 @@
+@keyframes floatAnimation {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(10px, -10px);
+    }
+    50% {
+      transform: translate(-10px, 10px);
+    }
+    75% {
+      transform: translate(-10px, -10px);
+    }
+  }
+
+.aboutme-container {
+    position: relative;
+    padding: 0 1rem;
+  }
+  
+  .aboutme-who {
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .aboutme-who-back-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .aboutme-who-back-icons .icon {
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0.1;
+  }
+
+  .aboutme-who-text{
+    max-width: 50%;
+  }
+  
+  .aboutme-who-text h1{
+    font-size: 2.25rem;
+    text-align: center;
+  }
+
+  .aboutme-who-text p{
+    font-size: 1.1rem;
+  }
