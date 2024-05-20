@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./mobileNavbar.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import { FaBars, FaBarsStaggered } from "react-icons/fa6";
 
 const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +21,7 @@ const MobileNavbar = () => {
         <h1>Emre Uslu</h1>
       </div>
       <div className="mobile-navbar-toggle" onClick={toggleNavbar}>
-        <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
+          {isOpen ? <FaBarsStaggered /> : <FaBars />}
       </div>
       <div className={`mobile-navbar-links ${isOpen ? "open" : ""}`}>
         <Link to={`/`}>
