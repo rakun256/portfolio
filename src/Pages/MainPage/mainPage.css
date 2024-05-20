@@ -67,7 +67,8 @@
 
     .mainpage-flexbox{
         flex-direction: column-reverse;
-        gap: 5rem;
+        gap: 3rem;
+        margin-top: -3rem;
     }
 
     .mainpage-title{
@@ -90,7 +91,7 @@
     }
 
     .mainpage-photo img{
-        width: 250px;
+        width: 225px;
     }
 
     .mainpage-socials{
